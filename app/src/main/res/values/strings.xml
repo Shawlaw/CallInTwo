@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CallInTwo</string>
+    <string name="call_notification_channel_description">For show call/msg notification.</string>
+    <string name="tips_no_call_phone_permission">Can\'t add any contacts because call phone permission is not granted.</string>
+    <string name="empty_view_initial">Selected contacts are loading&#8230;</string>
+    <string name="empty_view_loaded">Oops, no one is selected yet.</string>
+    <string name="header_selected_list">Selected contacts :</string>
+    <string name="text_msg">Msg</string>
+    <string name="call">Call</string>
+    <string name="name_contact">Contact name</string>
+    <string name="phone_number_contact">Contact phone number</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp"
+    android:background="#00000000"
+    >
+    <!--由于Notification最外层不支持margin，
+        所以只能额外裹一层，避免多个连续的时候显示效果黏在一起-->
+    <LinearLayout
+    android:id="@+id/notification_content"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notification"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+        <ImageView
+            android:id="@+id/notification_avatar"
+            android:layout_width="@dimen/width_avatar_notification"
+            android:layout_height="@dimen/height_avatar_notification"
+            android:src="@drawable/avatar_default"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/notification_name"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#dd222222"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            tools:text="联系人名称"
+            />
+
+        <ImageView
+            android:id="@+id/notification_msg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:src="@drawable/text_msg_on_notification"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@+id/notification_call"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/call_on_notification"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">两步拨号</string>
+    <string name="call_notification_channel_description">用于展示快捷拨号/发短信的通知</string>
+    <string name="tips_no_call_phone_permission">由于没有拨打电话的权限，所以暂时无法添加任何联系人。</string>
+    <string name="empty_view_initial">正在加载已选联系人列表&#8230;</string>
+    <string name="empty_view_loaded">空空荡荡，暂时还没有选择任一联系人。</string>
+    <string name="header_selected_list">联系人信息：</string>
+    <string name="text_msg">短信</string>
+    <string name="call">电话</string>
+    <string name="name_contact">联系人名称</string>
+    <string name="phone_number_contact">联系人电话</string>
+    <string name="save">保存</string>
+</resources>
