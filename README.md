@@ -18,7 +18,7 @@ All icons are downloaded from [Material Icons](https://material.io/icons/), and 
 
 <img src="./readmeImgs/emptyList.jpg" width="360px" height="640px" alt="Empty list"/>
 
-####Contact Detail
+#### Contact Detail
 
 <img src="./readmeImgs/contactDetail.jpg" width="360px" height="640px" alt="Contact Detail"/>
 
