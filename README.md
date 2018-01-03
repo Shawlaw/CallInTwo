@@ -14,7 +14,7 @@ All icons are downloaded from [Material Icons](https://material.io/icons/), and 
 
 ### Screenshots
 
-	#### Empty List
+#### Empty List
 
 <img src="./readmeImgs/emptyList.jpg" width="360px" height="640px" alt="Empty list"/>
 
@@ -33,4 +33,3 @@ All icons are downloaded from [Material Icons](https://material.io/icons/), and 
 #### Both checked Notification
 
 <img src="./readmeImgs/bothCheckedNotification.jpg" width="360px" height="640px" alt="Both checked Notification"/>
-
