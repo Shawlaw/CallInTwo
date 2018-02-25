@@ -28,10 +28,11 @@
 
         <receiver
             android:name=".receivers.BootCompleteReceiver"
-            android:exported="true">
+            android:enabled="false"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="Shawlaw.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
 

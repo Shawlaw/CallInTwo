@@ -43,6 +43,6 @@ public class LoadNotificationService extends JobIntentService implements Contact
     @Override
     public void onLoadFinish() {
         mContacts.doNotifyTraversal(this);
-        mContacts.closeDB();
+        mContacts.closeDB(this);
     }
 }
