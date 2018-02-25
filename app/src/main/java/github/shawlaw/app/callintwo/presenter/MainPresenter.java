@@ -53,7 +53,7 @@ public class MainPresenter implements IMainContract.IPresenter, PermissionUtils.
 
     @Override
     public void onActivityDestroy() {
-        mContacts.closeDB();
+        mContacts.closeDB(mActivity);
     }
 
     @Override

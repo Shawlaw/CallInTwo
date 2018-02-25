@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import github.shawlaw.app.callintwo.receivers.BootCompleteReceiver;
 import github.shawlaw.app.callintwo.repository.bean.SelectedContactBean;
 import github.shawlaw.app.callintwo.repository.database.DBOpenHelper;
 import github.shawlaw.app.callintwo.repository.database.SelectedContactDBEntry;
@@ -209,7 +210,7 @@ public class Contacts {
         }, DB_WORKER_QUEUE_NAME);
     }
 
-    public void closeDB() {
+    public void closeDB(Context context) {
         if (mDatabase != null) {
             mDatabase.close();
             mDatabase = null;
@@ -220,6 +221,7 @@ public class Contacts {
             mDatabaseManager = null;
         }
 
+        BootCompleteReceiver.enableReceiver(context, !mData.isEmpty());
         mData.clear();
     }
 
