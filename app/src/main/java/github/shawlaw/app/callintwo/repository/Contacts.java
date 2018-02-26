@@ -222,7 +222,6 @@ public class Contacts {
         }
 
         BootCompleteReceiver.enableReceiver(context, !mData.isEmpty());
-        mData.clear();
     }
 
     public interface ILoadCallback {
