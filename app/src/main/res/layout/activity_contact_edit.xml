@@ -6,58 +6,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="github.shawlaw.app.callintwo.activity.ContactDetailActivity"
-        >
-        <github.shawlaw.app.callintwo.widgets.RatioImageView
-            android:id="@+id/avatar_detail"
+        android:layout_marginBottom="60dp"
+        android:fillViewport="true">
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:src="@drawable/avatar_default"
-            app:widthHeightRatio="1"
-            />
-        <EditText
-            android:id="@+id/name_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="@string/name_contact"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            />
-        <EditText
-            android:id="@+id/phone_number_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:hint="@string/phone_number_contact"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            />
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:descendantFocusability="beforeDescendants"
+                >
+                <github.shawlaw.app.callintwo.widgets.RatioImageView
+                    android:id="@+id/avatar_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_default"
+                    app:widthHeightRatio="1"
+                    />
+                <EditText
+                    android:id="@+id/name_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/name_contact"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <EditText
+                    android:id="@+id/phone_number_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="@string/phone_number_contact"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
-
-        <Button
-            android:id="@+id/btn_save_detail"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:text="@string/save"
-            android:textSize="20sp"
-            />
-    </LinearLayout>
+            <FrameLayout
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/btn_back_detail"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="5dp"
+                    android:src="@drawable/arrow_back"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_save_detail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textSize="20sp"
+        />
     <FrameLayout
         android:id="@+id/loading_mask_detail"
         android:layout_width="match_parent"
@@ -69,18 +88,6 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            />
-    </FrameLayout>
-    <FrameLayout
-        android:fitsSystemWindows="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/btn_back_detail"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:padding="5dp"
-            android:src="@drawable/arrow_back"
             />
     </FrameLayout>
 </FrameLayout>
